@@ -7,9 +7,10 @@ namespace Modules\AI\Actions;
 use Codewithkyrian\Transformers\Transformers;
 use Exception;
 use Modules\AI\Contracts\SentimentAnalyzer;
-// use function Codewithkyrian\Transformers\Pipelines\pipeline;
 use Modules\AI\Datas\SentimentData;
+// use function Codewithkyrian\Transformers\Pipelines\pipeline;
 use Spatie\QueueableAction\QueueableAction;
+use Throwable;
 use Webmozart\Assert\Assert;
 
 // use function Codewithkyrian\Transformers\Pipelines\pipeline;
@@ -162,7 +163,7 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
                 // $result = $pipe($text);
                 // Assert::isArray($result);
                 throw new Exception('Transformers pipeline functionality temporarily disabled');
-            } catch (\Throwable $e) {
+            } catch (Throwable $e) {
                 // Fall back to basic sentiment analysis if pipeline creation fails
                 $basicAnalyzer = new BasicSentimentAnalyzer;
 
