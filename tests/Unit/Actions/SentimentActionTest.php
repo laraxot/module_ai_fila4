@@ -26,6 +26,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is a great product with excellent features. I am very happy with it.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -41,6 +42,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is a bad product with terrible features. I am very unhappy with it.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -56,6 +58,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is a product with some features. I have mixed feelings about it.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -70,6 +73,7 @@ class SentimentActionTest extends TestCase
         $text = '';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -85,6 +89,7 @@ class SentimentActionTest extends TestCase
         $text = 'good great excellent positive happy';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -100,6 +105,7 @@ class SentimentActionTest extends TestCase
         $text = 'bad poor terrible negative unhappy';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -115,6 +121,7 @@ class SentimentActionTest extends TestCase
         $text = 'This product is good but has some bad aspects. Overall I am happy but also concerned.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -129,6 +136,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is a GREAT product with EXCELLENT features. I am VERY HAPPY with it.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -143,6 +151,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is a great product! I am very happy with it. :)';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -157,6 +166,7 @@ class SentimentActionTest extends TestCase
         $text = 'I rate this product 5 out of 5. It is excellent and I am very happy.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -171,6 +181,7 @@ class SentimentActionTest extends TestCase
         $text = 'This product is terrible!!! I am very unhappy with it...';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -185,6 +196,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is a great product. I am very happy with it. The features are excellent.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -199,6 +211,7 @@ class SentimentActionTest extends TestCase
         $text = 'The API integration is good. The documentation is excellent. I am happy with the performance.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -213,6 +226,7 @@ class SentimentActionTest extends TestCase
         $text = 'I feel great about this decision. I am so happy and excited. This is wonderful news.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -227,6 +241,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is not a good product. I am not happy with it.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -241,6 +256,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is extremely good. I am very very happy. The features are absolutely excellent.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -255,6 +271,7 @@ class SentimentActionTest extends TestCase
         $text = 'This product is better than the previous one. I am happier now.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -269,6 +286,7 @@ class SentimentActionTest extends TestCase
         $text = 'Is this a good product? I am happy but also wondering about the quality.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -283,6 +301,7 @@ class SentimentActionTest extends TestCase
         $text = 'The customer said "This is excellent!" and I agree completely.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -297,6 +316,7 @@ class SentimentActionTest extends TestCase
         $text = 'This is gr8! I am v happy with it. The features are excellent.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -311,6 +331,7 @@ class SentimentActionTest extends TestCase
         $text = 'This product is bon (good in French). I am molto felice (very happy in Italian).';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -325,6 +346,7 @@ class SentimentActionTest extends TestCase
         $text = 'The API is good. The UI/UX is excellent. I am happy with the MVP.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -339,6 +361,7 @@ class SentimentActionTest extends TestCase
         $text = 'The 100% uptime is excellent. The 5-star rating is great. I am very happy.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -353,6 +376,7 @@ class SentimentActionTest extends TestCase
         $text = 'I am happy today. Yesterday was great. Tomorrow will be excellent.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert
@@ -367,6 +391,7 @@ class SentimentActionTest extends TestCase
         $text = 'If this works, I will be happy. The current state is good.';
 
         // Act
+        /** @phpstan-ignore-next-line property.notFound */
         $result = $this->action->execute($text);
 
         // Assert

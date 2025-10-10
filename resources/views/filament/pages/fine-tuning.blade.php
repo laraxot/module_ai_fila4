@@ -1,12 +1,12 @@
 <x-filament-panels::page>
-    {{-- Form di fine-tuning --}}
-    <x-filament-panels::form wire:submit.prevent="startFineTuning">
+     {{-- Form di fine-tuning --}}
+    <form wire:submit.prevent="startFineTuning">
         {{-- Renderizza il form generato nel controller --}}
         {{ $this->form }}
 
-        {{-- Azioni del form (pulsanti come Avvia Fine-Tuning) --}}
-        <x-filament-panels::form.actions
-            :actions="$this->getFormActions()"
-        />
-    </x-filament-panels::form>
-</x-filament-panels::page>
+        {{-- Filament v4: replace deprecated actions component with a submit button --}}
+        <x-filament::button type="submit">
+            {{ __('Start fine tuning') }}
+        </x-filament::button>
+    </form>
+ </x-filament-panels::page>
