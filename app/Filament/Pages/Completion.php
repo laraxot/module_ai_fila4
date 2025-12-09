@@ -24,11 +24,10 @@ use Webmozart\Assert\Assert;
  */
 class Completion extends XotBasePage implements HasForms
 {
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
+
     // protected string $view = 'ai::filament.pages.completion';
 
-    /**
-     * @var array<string, mixed>|null
-     */
     public ?array $completionData = [];
 
     public function mount(): void
@@ -94,9 +93,6 @@ class Completion extends XotBasePage implements HasForms
         return $user;
     }
 
-    /**
-     * @return array<int, \Filament\Actions\Action>
-     */
     protected function getFormActions(): array
     {
         return [

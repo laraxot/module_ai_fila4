@@ -35,7 +35,21 @@ class FineTuning extends XotBasePage
     /** @var TemporaryUploadedFile */
     public $dataset_file;
 
-    // Metodo rimosso: safeTranslate() non utilizzato
+    /**
+     * Safe translation helper that returns string.
+     */
+    private function safeTranslate(string $key): string
+    {
+        $translation = __($key);
+        if (is_string($translation)) {
+            return $translation;
+        }
+        if (is_array($translation) && count($translation) > 0) {
+            return (string) reset($translation);
+        }
+
+        return $key;
+    }
 
     /**
      * Schema del form.
@@ -113,9 +127,6 @@ class FineTuning extends XotBasePage
         }
     }
 
-    /**
-     * @param array<string, mixed> $data
-     */
     protected function sendFineTuningRequest(array $data, string $endpoint): Response
     {
         Assert::string($dataset_file = $data['dataset_file']);
@@ -127,8 +138,6 @@ class FineTuning extends XotBasePage
 
     /**
      * Restituisce le azioni del form, come il pulsante per avviare il fine-tuning.
-     *
-     * @return array<int, \Filament\Actions\Action>
      */
     protected function getFormActions(): array
     {

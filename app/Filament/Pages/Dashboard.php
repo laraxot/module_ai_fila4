@@ -9,5 +9,7 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 
 class Dashboard extends XotBasePage
 {
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
+
     protected string $view = 'ai::filament.pages.dashboard';
 }
