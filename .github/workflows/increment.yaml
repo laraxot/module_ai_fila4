@@ -27,7 +27,11 @@ jobs:
       - name: Bumping Major Index
         id: bump_version_major
         if: contains(github.event.pull_request.title, 'major')
+<<<<<<< HEAD
         uses: christian-draeger/increment-semantic-version@1.2.3
+=======
+        uses: christian-draeger/increment-semantic-version@1.1.0
+>>>>>>> 7bf22f1 (.)
         with:
           current-version: ${{ steps.releaseVersion.outputs.Release_tag }}
           version-fragment: 'major'
@@ -35,7 +39,11 @@ jobs:
       - name: Bumping Minor Index
         id: bump_version_minor
         if: contains(github.event.pull_request.title, 'minor')
+<<<<<<< HEAD
         uses: christian-draeger/increment-semantic-version@1.2.3
+=======
+        uses: christian-draeger/increment-semantic-version@1.1.0
+>>>>>>> 7bf22f1 (.)
         with:
           current-version: ${{ steps.releaseVersion.outputs.Release_tag }}
           version-fragment: 'feature'
@@ -43,7 +51,11 @@ jobs:
       - name: Bumping Patch Index
         id: bump_version_patch
         if: contains(github.event.pull_request.title, 'patch')
+<<<<<<< HEAD
         uses: christian-draeger/increment-semantic-version@1.2.3
+=======
+        uses: christian-draeger/increment-semantic-version@1.1.0
+>>>>>>> 7bf22f1 (.)
         with:
           current-version: ${{ steps.releaseVersion.outputs.Release_tag }}
           version-fragment: 'bug'
