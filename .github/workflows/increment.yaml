@@ -22,7 +22,7 @@ jobs:
           echo ::set-output name=Release_tag::"$Release_tag"
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Bumping Major Index
         id: bump_version_major
