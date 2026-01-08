@@ -46,18 +46,9 @@ bin/venv/
 -e 
 # PHPStan documentation
 docs/phpstan/
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 901402b (.)
 
 # Backup files
 *.old
 *.old1
 *.backup
 *.backup.*
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/develop
->>>>>>> 901402b (.)
