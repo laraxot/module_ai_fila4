@@ -1,2 +1,0 @@
-https://medium.com/@geoligard/using-laravel-to-interact-with-openais-assistant-api-with-vision-fe132b5fe43f
-
