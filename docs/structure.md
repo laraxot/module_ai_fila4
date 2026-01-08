@@ -96,7 +96,12 @@ Contiene i test automatizzati.
 
 ## Collegamenti alla documentazione generale
 
+<<<<<<< HEAD
 - [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/project_docs/phpstan/)
+=======
+- [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
+- [Report PHPStan](/docs/phpstan/)
+>>>>>>> 901402b (.)
 - [Errori Comuni e Soluzioni](errors.md)
 

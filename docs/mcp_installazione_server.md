@@ -101,7 +101,11 @@ npm run build
 ## Utilizzo MCP Server
 
 Questo progetto utilizza i server MCP centralizzati in `/var/www/html/_bases/mcp-servers`.
+<<<<<<< HEAD
 Per avviare un server MCP, segui la guida in `/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/AI/project_docs/MCP_INSTALLAZIONE_SERVER.md`.
+=======
+Per avviare un server MCP, segui la guida in `/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/AI/docs/MCP_INSTALLAZIONE_SERVER.md`.
+>>>>>>> 901402b (.)
 ```
 
 ---

@@ -4,8 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\AI\Tests\Unit\Services;
 
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Exception;
+=======
+<<<<<<< HEAD
+use InvalidArgumentException;
+use Exception;
+=======
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
 use Modules\AI\Services\AIService;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -60,7 +68,15 @@ class AIServiceTest extends TestCase
         $invalidTemperature = 2.0; // Out of range
         
         // Act & Assert
+<<<<<<< HEAD
         $this->expectException(InvalidArgumentException::class);
+=======
+<<<<<<< HEAD
+        $this->expectException(InvalidArgumentException::class);
+=======
+        $this->expectException(\InvalidArgumentException::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('Temperature must be between 0.0 and 1.0');
         
         $this->service->generateText($prompt, $invalidTemperature);
@@ -73,7 +89,15 @@ class AIServiceTest extends TestCase
         $invalidMaxTokens = -10; // Negative value
         
         // Act & Assert
+<<<<<<< HEAD
         $this->expectException(InvalidArgumentException::class);
+=======
+<<<<<<< HEAD
+        $this->expectException(InvalidArgumentException::class);
+=======
+        $this->expectException(\InvalidArgumentException::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('Max tokens must be positive');
         
         $this->service->generateText($prompt, 0.5, $invalidMaxTokens);
@@ -101,7 +125,15 @@ class AIServiceTest extends TestCase
         $invalidLanguage = 'invalid_lang';
         
         // Act & Assert
+<<<<<<< HEAD
         $this->expectException(InvalidArgumentException::class);
+=======
+<<<<<<< HEAD
+        $this->expectException(InvalidArgumentException::class);
+=======
+        $this->expectException(\InvalidArgumentException::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('Unsupported programming language: invalid_lang');
         
         $this->service->generateCodeCompletion($codePrompt, $invalidLanguage);
@@ -170,7 +202,15 @@ class AIServiceTest extends TestCase
         $emptyCategories = [];
         
         // Act & Assert
+<<<<<<< HEAD
         $this->expectException(InvalidArgumentException::class);
+=======
+<<<<<<< HEAD
+        $this->expectException(InvalidArgumentException::class);
+=======
+        $this->expectException(\InvalidArgumentException::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('Categories list cannot be empty');
         
         $this->service->classifyText($text, $emptyCategories);
@@ -182,10 +222,23 @@ class AIServiceTest extends TestCase
         $text = 'Hello, how are you?';
         $sourceLanguage = 'en';
         $targetLanguage = 'it';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901402b (.)
 
         // Act
         $result = $this->service->translateText($text, $sourceLanguage, $targetLanguage);
 
+<<<<<<< HEAD
+=======
+=======
+        
+        // Act
+        $result = $this->service->translateText($text, $sourceLanguage, $targetLanguage);
+        
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         // Assert
         $this->assertIsString($result);
         $this->assertNotEmpty($result);
@@ -200,7 +253,15 @@ class AIServiceTest extends TestCase
         $targetLang = 'it';
         
         // Act & Assert
+<<<<<<< HEAD
         $this->expectException(InvalidArgumentException::class);
+=======
+<<<<<<< HEAD
+        $this->expectException(InvalidArgumentException::class);
+=======
+        $this->expectException(\InvalidArgumentException::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('Invalid source language code: invalid');
         
         $this->service->translateText($text, $invalidSourceLang, $targetLang);
@@ -225,7 +286,15 @@ class AIServiceTest extends TestCase
         $nonExistentImage = '/path/to/nonexistent.jpg';
         
         // Act & Assert
+<<<<<<< HEAD
         $this->expectException(InvalidArgumentException::class);
+=======
+<<<<<<< HEAD
+        $this->expectException(InvalidArgumentException::class);
+=======
+        $this->expectException(\InvalidArgumentException::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('Image file not found: /path/to/nonexistent.jpg');
         
         $this->service->generateImageDescription($nonExistentImage);
@@ -261,7 +330,15 @@ class AIServiceTest extends TestCase
         $modelName = 'gpt-3.5-turbo';
         
         // Act & Assert
+<<<<<<< HEAD
         $this->expectException(InvalidArgumentException::class);
+=======
+<<<<<<< HEAD
+        $this->expectException(InvalidArgumentException::class);
+=======
+        $this->expectException(\InvalidArgumentException::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('Training data must have both prompt and completion');
         
         $this->service->fineTuneModel($invalidTrainingData, $modelName);
@@ -288,7 +365,15 @@ class AIServiceTest extends TestCase
         $invalidJobId = 'invalid-job-id';
         
         // Act & Assert
+<<<<<<< HEAD
         $this->expectException(InvalidArgumentException::class);
+=======
+<<<<<<< HEAD
+        $this->expectException(InvalidArgumentException::class);
+=======
+        $this->expectException(\InvalidArgumentException::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('Invalid job ID format: invalid-job-id');
         
         $this->service->getFineTuningStatus($invalidJobId);
@@ -302,11 +387,25 @@ class AIServiceTest extends TestCase
         // Mock API error response
         $this->mock('Modules\AI\Services\OpenAIAPIService', function ($mock) {
             $mock->shouldReceive('generateText')
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901402b (.)
                 ->andThrow(new Exception('API rate limit exceeded'));
         });
         
         // Act & Assert
         $this->expectException(Exception::class);
+<<<<<<< HEAD
+=======
+=======
+                ->andThrow(new \Exception('API rate limit exceeded'));
+        });
+        
+        // Act & Assert
+        $this->expectException(\Exception::class);
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         $this->expectExceptionMessage('API rate limit exceeded');
         
         $this->service->generateText($prompt);
@@ -353,6 +452,10 @@ class AIServiceTest extends TestCase
         // Arrange
         $prompt = 'Test prompt for TTL';
         $ttl = 60; // 1 minute
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901402b (.)
 
         // Act
         $result1 = $this->service->generateText($prompt, 0.5, 100, $ttl);
@@ -363,6 +466,21 @@ class AIServiceTest extends TestCase
         // Second call (cache expired)
         $result2 = $this->service->generateText($prompt, 0.5, 100, $ttl);
 
+<<<<<<< HEAD
+=======
+=======
+        
+        // Act
+        $result1 = $this->service->generateText($prompt, 0.5, 100, $ttl);
+        
+        // Simulate time passing
+        $this->travel(61)->seconds();
+        
+        // Second call (cache expired)
+        $result2 = $this->service->generateText($prompt, 0.5, 100, $ttl);
+        
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
         // Assert
         $this->assertIsString($result1);
         $this->assertIsString($result2);

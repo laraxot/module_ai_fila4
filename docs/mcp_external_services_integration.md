@@ -846,12 +846,21 @@ L'integrazione di MCP con servizi esterni richiede particolare attenzione alla s
 
 ## Risorse e Riferimenti
 
+<<<<<<< HEAD
 - [Documentazione Ufficiale MCP](../../../project_docs/references/mcp_documentation.md)
 - [Laravel MCP SDK](../../../project_docs/references/laravel_mcp_sdk.md)
 - [AWS MCP Server](../../../project_docs/references/aws_mcp_server.md)
 - [GCP MCP Server](../../../project_docs/references/gcp_mcp_server.md)
 - [HTTP MCP Server](../../../project_docs/references/http_mcp_server.md)
 - [Stripe MCP Integration](../../../project_docs/references/stripe_mcp_integration.md)
+=======
+- [Documentazione Ufficiale MCP](../../../docs/references/mcp_documentation.md)
+- [Laravel MCP SDK](../../../docs/references/laravel_mcp_sdk.md)
+- [AWS MCP Server](../../../docs/references/aws_mcp_server.md)
+- [GCP MCP Server](../../../docs/references/gcp_mcp_server.md)
+- [HTTP MCP Server](../../../docs/references/http_mcp_server.md)
+- [Stripe MCP Integration](../../../docs/references/stripe_mcp_integration.md)
+>>>>>>> 901402b (.)
 
 Per ulteriori informazioni sull'implementazione di MCP in Laravel, consulta la [Guida all'Integrazione MCP](./MCP_INTEGRATION_GUIDE.md), i [Casi d'Uso di MCP](./MCP_CASI_USO.md) e l'[Integrazione MCP con Database](./MCP_DATABASE_INTEGRATION.md).
 

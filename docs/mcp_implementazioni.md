@@ -483,5 +483,10 @@ L'implementazione di server MCP nel modulo AI di Windsurf/Xot offre un potente m
 ## Risorse Correlate
 
 - [Panoramica MCP](./MCP_OVERVIEW.md)
+<<<<<<< HEAD
 - [Implementazione di Server MCP](../../../project_docs/tutorials/MCP_SERVER_IMPLEMENTATION.md)
 - [Sicurezza nei Server MCP](../../../project_docs/security/MCP_SECURITY_BEST_PRACTICES.md)
+=======
+- [Implementazione di Server MCP](../../../docs/tutorials/MCP_SERVER_IMPLEMENTATION.md)
+- [Sicurezza nei Server MCP](../../../docs/security/MCP_SECURITY_BEST_PRACTICES.md)
+>>>>>>> 901402b (.)

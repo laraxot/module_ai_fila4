@@ -22,9 +22,15 @@ MCP supporta due modalità di trasporto:
 
 Laravel offre diverse opzioni per implementare server MCP, attraverso pacchetti dedicati che semplificano l'integrazione:
 
+<<<<<<< HEAD
 - [InnoGE/laravel-mcp](../../../project_docs/references/MCP_PACKAGES.md#innoge-laravel-mcp): Pacchetto per sviluppare server MCP con Laravel (supporta STDIO)
 - [opgginc/laravel-mcp-server](../../../project_docs/references/MCP_PACKAGES.md#opgg-laravel-mcp-server): Implementazione basata su SSE per ambienti enterprise
 - [jsonallen/laravel-mcp](../../../project_docs/references/MCP_PACKAGES.md#jsonallen-laravel-mcp): Strumenti helper per Laravel
+=======
+- [InnoGE/laravel-mcp](../../../docs/references/MCP_PACKAGES.md#innoge-laravel-mcp): Pacchetto per sviluppare server MCP con Laravel (supporta STDIO)
+- [opgginc/laravel-mcp-server](../../../docs/references/MCP_PACKAGES.md#opgg-laravel-mcp-server): Implementazione basata su SSE per ambienti enterprise
+- [jsonallen/laravel-mcp](../../../docs/references/MCP_PACKAGES.md#jsonallen-laravel-mcp): Strumenti helper per Laravel
+>>>>>>> 901402b (.)
 
 ## Casi d'Uso per il Modulo AI
 
@@ -130,6 +136,12 @@ Per iniziare, si consiglia di implementare un caso d'uso semplice come l'assiste
 
 ## Risorse Correlate
 
+<<<<<<< HEAD
 - [Documentazione Ufficiale MCP](../../../project_docs/references/MCP_RESOURCES.md#documentazione-ufficiale)
 - [Pacchetti Laravel per MCP](../../../project_docs/references/MCP_PACKAGES.md)
 - [Tutorial di Implementazione](../../../project_docs/tutorials/MCP_IMPLEMENTATION.md)
+=======
+- [Documentazione Ufficiale MCP](../../../docs/references/MCP_RESOURCES.md#documentazione-ufficiale)
+- [Pacchetti Laravel per MCP](../../../docs/references/MCP_PACKAGES.md)
+- [Tutorial di Implementazione](../../../docs/tutorials/MCP_IMPLEMENTATION.md)
+>>>>>>> 901402b (.)

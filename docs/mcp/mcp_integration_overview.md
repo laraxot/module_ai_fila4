@@ -39,7 +39,11 @@ Il modulo Blog utilizza i server MCP per l'analisi dei contenuti, la memorizzazi
 - Memory: Per la memorizzazione di analisi e metadati
 - MySQL: Per operazioni complesse sui post
 
+<<<<<<< HEAD
 **Documentazione dettagliata**: [Modulo Blog](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Blog/project_docs/MCP_INTEGRATION.md)
+=======
+**Documentazione dettagliata**: [Modulo Blog](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Blog/docs/MCP_INTEGRATION.md)
+>>>>>>> 901402b (.)
 
 ### Modulo User
 
@@ -51,7 +55,11 @@ Il modulo User utilizza i server MCP per la gestione delle preferenze degli uten
 - MySQL: Per operazioni complesse sugli utenti
 - Redis: Per la gestione della cache e delle sessioni
 
+<<<<<<< HEAD
 **Documentazione dettagliata**: [Modulo User](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/project_docs/MCP_INTEGRATION.md)
+=======
+**Documentazione dettagliata**: [Modulo User](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/MCP_INTEGRATION.md)
+>>>>>>> 901402b (.)
 
 ### Modulo UI
 
@@ -63,7 +71,11 @@ Il modulo UI utilizza i server MCP per l'automazione del browser, la gestione de
 - Redis: Per il caching dei componenti UI
 - Sequential Thinking: Per l'analisi dell'accessibilità dell'interfaccia utente
 
+<<<<<<< HEAD
 **Documentazione dettagliata**: [Modulo UI](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/UI/project_docs/MCP_INTEGRATION.md)
+=======
+**Documentazione dettagliata**: [Modulo UI](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/UI/docs/MCP_INTEGRATION.md)
+>>>>>>> 901402b (.)
 
 ### Modulo Xot
 
@@ -76,7 +88,11 @@ Il modulo Xot, che funge da modulo base per molti altri moduli, utilizza i serve
 - Sequential Thinking: Per l'analisi e l'ottimizzazione del codice
 - Postgres: Per l'interazione con database PostgreSQL
 
+<<<<<<< HEAD
 **Documentazione dettagliata**: [Modulo Xot](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Xot/project_docs/MCP_INTEGRATION.md)
+=======
+**Documentazione dettagliata**: [Modulo Xot](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Xot/docs/MCP_INTEGRATION.md)
+>>>>>>> 901402b (.)
 
 ## Linee Guida Generali per l'Integrazione
 
