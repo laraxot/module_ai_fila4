@@ -611,12 +611,21 @@ L'integrazione di MCP con database richiede particolare attenzione alla sicurezz
 
 ## Risorse e Riferimenti
 
+<<<<<<< HEAD
 - [Documentazione Ufficiale MCP](../../../project_docs/references/mcp_documentation.md)
 - [Laravel MCP SDK](../../../project_docs/references/laravel_mcp_sdk.md)
 - [MySQL MCP Server](../../../project_docs/references/mysql_mcp_server.md)
 - [PostgreSQL MCP Server](../../../project_docs/references/postgresql_mcp_server.md)
 - [Neon PostgreSQL Integration](../../../project_docs/references/neon_postgresql_integration.md)
 - [Supabase MCP Integration](../../../project_docs/references/supabase_mcp_integration.md)
+=======
+- [Documentazione Ufficiale MCP](../../../docs/references/mcp_documentation.md)
+- [Laravel MCP SDK](../../../docs/references/laravel_mcp_sdk.md)
+- [MySQL MCP Server](../../../docs/references/mysql_mcp_server.md)
+- [PostgreSQL MCP Server](../../../docs/references/postgresql_mcp_server.md)
+- [Neon PostgreSQL Integration](../../../docs/references/neon_postgresql_integration.md)
+- [Supabase MCP Integration](../../../docs/references/supabase_mcp_integration.md)
+>>>>>>> 901402b (.)
 
 Per ulteriori informazioni sull'implementazione di MCP in Laravel, consulta la [Guida all'Integrazione MCP](./MCP_INTEGRATION_GUIDE.md) e i [Casi d'Uso di MCP](./MCP_CASI_USO.md).
 

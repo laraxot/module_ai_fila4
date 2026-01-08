@@ -4,8 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\AI\Actions;
 
+<<<<<<< HEAD
 use Modules\AI\Datas\CompletionData;
 use OpenAI\Laravel\Facades\OpenAI;
+=======
+<<<<<<< HEAD
+use Modules\AI\Datas\CompletionData;
+use OpenAI\Laravel\Facades\OpenAI;
+=======
+use OpenAI\Laravel\Facades\OpenAI;
+use Modules\AI\Datas\CompletionData;
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class CompletionAction
@@ -14,6 +24,15 @@ class CompletionAction
 
     /**
      * Execute the completion action and return structured data.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+     *
+     * @param string $prompt
+     * @return \Modules\AI\Datas\CompletionData
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
      */
     public function execute(string $prompt): CompletionData
     {
@@ -31,11 +50,24 @@ class CompletionAction
         // Map OpenAI response to Data Transfer Object
         $choice = $result->choices[0]->text;
         $usage = $result->usage;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901402b (.)
 
         return new CompletionData(
             text: trim($choice),
             promptTokens: $usage->promptTokens,
             completionTokens: $usage->completionTokens ?? 0,
+<<<<<<< HEAD
+=======
+=======
+        return new CompletionData(
+            text: trim($choice),
+            promptTokens: $usage->promptTokens,
+            completionTokens: $usage->completionTokens,
+>>>>>>> origin/develop
+>>>>>>> 901402b (.)
             totalTokens: $usage->totalTokens,
         );
     }

@@ -36,7 +36,11 @@
 ## Integrazioni Database
 
 - [MySQL MCP Server](https://github.com/designcomputer/mysql_mcp_server) - Server MCP per MySQL
+<<<<<<< HEAD
 - [Supabase MCP](https://supabase.com/project_docs/guides/getting-started/mcp) - Integrazione Supabase con MCP
+=======
+- [Supabase MCP](https://supabase.com/docs/guides/getting-started/mcp) - Integrazione Supabase con MCP
+>>>>>>> 901402b (.)
 - [ADB MySQL MCP Server](https://github.com/aliyun/alibabacloud-adb-mysql-mcp-server) - Server MCP per ADB MySQL
 - [Neon MCP](https://neon.tech/guides/cursor-mcp-neon) - Integrazione Neon con MCP
 

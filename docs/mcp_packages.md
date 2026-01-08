@@ -191,4 +191,8 @@ return [
 
 - [Panoramica MCP](./MCP_OVERVIEW.md)
 - [Implementazioni MCP](./MCP_IMPLEMENTAZIONI.md)
+<<<<<<< HEAD
 - [Tutorial di Implementazione](../../../project_docs/tutorials/MCP_IMPLEMENTATION.md)
+=======
+- [Tutorial di Implementazione](../../../docs/tutorials/MCP_IMPLEMENTATION.md)
+>>>>>>> 901402b (.)
